@@ -9,7 +9,7 @@ require('./config/db')
 
 // using all pakages
 app.use(cors());
-app.use(bodyPrser.urlencoded({extended:false}));
+app.use(bodyPrser.urlencoded({extended:true}));
 app.use(bodyPrser.json());
 app.use("/user",userRouters);
 
